@@ -18,14 +18,14 @@
                         <div class="overlay-content">
                          <h2>{{$v_product_by_manufacture->product_price}} Tk</h2>
                           <p>{{$v_product_by_manufacture->product_name}}</p>
-                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            <a href="{{URL::to('/view_product/'.$v_product_by_manufacture->product_id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                         </div>
                         </div>
                  </div>
                     <div class="choose">
                          <ul class="nav nav-pills nav-justified">
                             <li><a href="#"><i class="fa fa-plus-square"></i>{{$v_product_by_manufacture->manufacture_name}}</a></li>
-                            <li><a href="#"><i class="fa fa-plus-square"></i>View Product</a></li>
+                            <li><a href="{{URL::to('/view_product/'.$v_product_by_manufacture->product_id)}}"><i class="fa fa-plus-square"></i>View Product</a></li>
                                     </ul>
                                 </div>
                             </div>
